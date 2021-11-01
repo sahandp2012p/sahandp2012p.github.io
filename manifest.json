@@ -1,0 +1,16 @@
+{
+  "name": "Eieruhr",
+  "short_name": "Eieruhr",
+  "theme_color": "#262626",
+  "background_color": "#262626",
+  "display": "fullscreen",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "img/eggicon.png",
+      "sizes": "225x225",
+      "type": "image/png"
+    }
+  ]
+}

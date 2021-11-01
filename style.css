@@ -1,0 +1,22 @@
+.margin-top {
+  margin-top: 100px;
+}
+
+.menu {
+  margin: 50px 0px 0px 50px;
+}
+
+body {
+  background-color: #262626;
+  font-family: "Roboto", sans-serif;
+}
+
+.zeit {
+  color: white;
+  font-size: 100px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
