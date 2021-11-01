@@ -10,7 +10,7 @@ function startTimer() {
 
     document.querySelector(".zeit").textContent = `${minutes} : ${seconds}`;
     if (minutes < 10) {
-      document.querySelector(".zeit").textContent = `$0{minutes} : ${seconds}`;
+      document.querySelector(".zeit").textContent = `0${minutes} : ${seconds}`;
     }
   }, 1000);
 }
