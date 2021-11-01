@@ -5,12 +5,5 @@
   "background_color": "#262626",
   "display": "fullscreen",
   "scope": "/",
-  "start_url": "/",
-  "icons": [
-    {
-      "src": "img/eggicon.png",
-      "sizes": "225x225",
-      "type": "image/png"
-    }
-  ]
+  "start_url": "/"
 }
