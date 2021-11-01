@@ -1,4 +1,4 @@
-unction startTimer() {
+function startTimer() {
   let startTime = new Date().getTime();
   let fifteenMinutes = 1000 * 60 * 15;
   let endTime = startTime + fifteenMinutes;
