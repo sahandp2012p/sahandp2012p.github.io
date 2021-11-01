@@ -1,12 +1,6 @@
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function () {
-    this.navigator.serviceWorker.register("./sw.js");
-  });
-}
-
-function startTimer() {
+unction startTimer() {
   let startTime = new Date().getTime();
-  let fiveMinutes = 1000 * 60 * 5;
+  let fiveMinutes = 1000 * 60 * 15;
   let endTime = startTime + fiveMinutes;
 
   setInterval(function () {
