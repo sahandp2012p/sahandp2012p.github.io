@@ -2,6 +2,7 @@ function startTimer() {
   let startTime = new Date().getTime();
   let fifteenMinutes = 1000 * 60 * 15;
   let endTime = startTime + fifteenMinutes;
+  let ding = new Audio("./ding.mp3");
 
   setInterval(function () {
     let timeLeft = endTime - new Date().getTime();
@@ -11,6 +12,10 @@ function startTimer() {
     document.querySelector(".zeit").textContent = `${minutes} : ${seconds}`;
     if (minutes < 10) {
       document.querySelector(".zeit").textContent = `0${minutes} : ${seconds}`;
+    }
+    
+    if (minutes == 0 && seconds == 0) {
+      ding.play()
     }
   }, 1000);
 }
