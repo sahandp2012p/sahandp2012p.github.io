@@ -1,7 +1,7 @@
 unction startTimer() {
   let startTime = new Date().getTime();
-  let fiveMinutes = 1000 * 60 * 15;
-  let endTime = startTime + fiveMinutes;
+  let fifteenMinutes = 1000 * 60 * 15;
+  let endTime = startTime + fifteenMinutes;
 
   setInterval(function () {
     let timeLeft = endTime - new Date().getTime();
