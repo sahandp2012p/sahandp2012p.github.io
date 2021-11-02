@@ -17,9 +17,6 @@ function startTimer() {
     }
     
     
-    
-    
-    
     if (minutes == 0 && seconds == 0) {
       ding.play()
       clearInterval(timer)
