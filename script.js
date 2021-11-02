@@ -10,13 +10,23 @@ function startTimer() {
     let seconds = Math.round((timeLeft / 1000) % 60);
 
     document.querySelector(".zeit").textContent = `${minutes} : ${seconds}`;
+    
+    if (seconds < 10) {
+      document.querySelector(".zeit").textContent = `${minutes} : 0${seconds}`;
+    }
+    
+    if (seconds < 10 && minutes < 10) {
+      document.querySelector(".zeit").textContent = `0${minutes} : 0${seconds}`;
+      
+    }
+    
     if (minutes < 10) {
       document.querySelector(".zeit").textContent = `0${minutes} : ${seconds}`;
     }
     
-    if (minutes < seconds) {
-      document.querySelector(".zeit").textContent = `0${minutes} : $0{seconds}`;
-    }
+    
+    
+    
     
     if (minutes == 0 && seconds == 0) {
       ding.play()
