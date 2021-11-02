@@ -4,7 +4,7 @@ function startTimer() {
   let endTime = startTime + fifteenMinutes;
   let ding = new Audio("./ding.mp3");
 
-  setInterval(function timer() {
+  let timer = setInterval(function() {
     let timeLeft = endTime - new Date().getTime();
     let minutes = Math.floor(timeLeft / (1000 * 60));
     let seconds = Math.round((timeLeft / 1000) % 60);
