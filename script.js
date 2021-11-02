@@ -14,6 +14,10 @@ function startTimer() {
       document.querySelector(".zeit").textContent = `0${minutes} : ${seconds}`;
     }
     
+    if (minutes < seconds) {
+      document.querySelector(".zeit").textContent = `0${minutes} : $0{seconds}`;
+    }
+    
     if (minutes == 0 && seconds == 0) {
       ding.play()
     }
